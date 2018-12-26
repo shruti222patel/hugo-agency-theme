@@ -16,8 +16,14 @@
   {{ end }}
 
   {{ "<!-- Custom Fonts -->" | safeHTML }}
-  <link href="{{ "fontawesome-free-v5.6.3-web/css/fontawesome.min.css" | absURL }}" rel="stylesheet" type="text/css">
+  <link href="{{ "fontawesome-free-5.6.3-web/css/fontawesome.min.css" | absURL }}" rel="stylesheet" type="text/css">
+  <link href="{{ "fontawesome-free-5.6.3-web/css/brands.min.css" | absURL }}" rel="stylesheet" type="text/css">
+  <link href="{{ "fontawesome-free-5.6.3-web/css/solid.min.css" | absURL }}" rel="stylesheet" type="text/css">
 
+  <script defer src="{{ "fontawesome-free-5.6.3-web/js/brands.min.js" | absURL }}"></script>
+  <script defer src="{{ "fontawesome-free-5.6.3-web/js/solid.min.js" | absURL }}"></script>
+  <script defer src="{{ "fontawesome-free-5.6.3-web/js/fontawesome.min.js" | absURL }}"></script>
+  
   {{ with not .Site.Params.disableFonts }}
     <link href="//fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="//fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" type="text/css">
